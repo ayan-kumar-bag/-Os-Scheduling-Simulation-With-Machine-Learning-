@@ -1,0 +1,18 @@
+# 🖥️ OS Scheduling Algorithms with Machine Learning 🤖
+
+An interactive **Streamlit** app to simulate classic OS scheduling algorithms and recommend the best scheduler using **Machine Learning**!
+
+---
+
+## 🚀 Features
+
+- 📊 Visualize FCFS, SJF, Priority & Round Robin scheduling  
+- 🤓 ML-based recommendation for optimal scheduling  
+- 📁 Upload CSV or input process data manually  
+- 🌐 Easy-to-use browser interface with Streamlit  
+
+---
+
+## ⚙️ Installation
+
+1. Clone this repo:  

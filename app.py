@@ -23,7 +23,6 @@ quantum = st.number_input("Quantum (only for Round Robin)", min_value=1, value=2
 
 # Run scheduling
 if st.button("Run"):
-    # Use iterrows() for compatibility with column names containing spaces
     proc_list = [
         Process(row["PID"], row["Arrival Time"], row["Burst Time"], row["Priority"])
         for _, row in df.iterrows() if not pd.isnull(row["PID"])
@@ -51,3 +50,15 @@ if st.button("Run"):
 
     st.subheader("Schedule (PID, Start, Finish)")
     st.dataframe(pd.DataFrame(result, columns=["PID", "Start", "Finish"]))
+
+# Developer section
+st.markdown("---")
+st.markdown("### 👨‍💻 Developed by")
+
+col1, col2 = st.columns(2)
+
+with col1:
+    st.image("soumyajit.jpg", caption="Soumyajit Khan", width=200)
+
+with col2:
+    st.image("ayan.jpg", caption="Ayan Kumar Bag", width=200)
